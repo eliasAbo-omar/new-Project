@@ -7,8 +7,8 @@ const btn = document.querySelector(".btn");
 btn.addEventListener("click", (e) => {
   e.preventDefault();
 
-  const nameValue = firstInput.value.toLowerCase();
-  const groupValue = scondInput.value.toLowerCase();
+  const nameValue = firstInput.value.trim().toLowerCase();
+  const groupValue = scondInput.value.trim().toLowerCase();
 
   if (nameValue === "" || groupValue === "") {
     spanText.textContent = "الرجاء تعبئة جميع الخانات";
@@ -17,6 +17,8 @@ btn.addEventListener("click", (e) => {
     return;
   } else if (nameValue !== "" && groupValue !== "") {
     spanText.textContent = "";
+    localStorage.removeItem("na");
+    localStorage.removeItem("gr");
     localStorage.setItem("na", nameValue);
     localStorage.setItem("gr", groupValue);
   }
