@@ -14,11 +14,12 @@ btn.addEventListener("click", (e) => {
     spanText.textContent = "الرجاء تعبئة جميع الخانات";
     spanText.style.color = "red";
     form.appendChild(spanText);
+    return;
   } else if (nameValue !== "" && groupValue !== "") {
     spanText.textContent = "";
     localStorage.setItem("na", nameValue);
     localStorage.setItem("gr", groupValue);
   }
 
-  window.location.href = "";
+  window.location.href = "afterLog.html";
 });
