@@ -20,5 +20,5 @@ btn.addEventListener("click", (e) => {
     localStorage.setItem("gr", groupValue);
   }
 
-  window.location.href = "";
+  // window.location.href = "";
 });
