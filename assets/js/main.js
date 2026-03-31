@@ -1,13 +1,17 @@
-import { createIcons, List, Camera, User, ScanFace } from "lucide";
+import { createIcons, ScanFace, MSquare, Mail } from "lucide";
+import * as iconLogo from "simple-icons";
 
-// انتظر حتى يتم تحميل الصفحة بالكامل
-document.addEventListener("DOMContentLoaded", () => {
-  createIcons({
-    icons: {
-      Camera,
-      User,
-      List,
-      ScanFace,
-    },
-  });
+createIcons({
+  icons: {
+    ScanFace,
+    MSquare,
+    Mail,
+  },
 });
+
+const facebook = iconLogo.siFacebook.svg;
+
+const container = document.getElementById("fb-icon");
+container.innerHTML = facebook;
+
+console.log(facebook);

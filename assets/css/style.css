@@ -4,3 +4,7 @@ svg {
   height: 30px;
   stroke-width: 3px;
 }
+
+#fb-icon svg {
+  fill: red;
+}
