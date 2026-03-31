@@ -1,4 +1,4 @@
-import { createIcons, Camera, User } from "lucide";
+import { createIcons, List, Camera, User, ScanFace } from "lucide";
 
 // انتظر حتى يتم تحميل الصفحة بالكامل
 document.addEventListener("DOMContentLoaded", () => {
@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     icons: {
       Camera,
       User,
+      List,
+      ScanFace,
     },
   });
 });
