@@ -1,7 +1,8 @@
 let firstInput = document.getElementById("first-input");
 let scondInput = document.getElementById("scond-input");
 let spanText = document.createElement("span");
-const form = document.querySelector(".log-in");
+let spanValue = document.createElement("span");
+let form = document.querySelector(".log-in");
 const btn = document.querySelector(".btn");
 
 btn.addEventListener("click", (e) => {
@@ -23,5 +24,12 @@ btn.addEventListener("click", (e) => {
     localStorage.setItem("gr", groupValue);
   }
 
-  window.location.href = "afterLog.html";
+  // if (nameValue !== "") {
+  //   spanValue.textContent = ` “ ${nameValue} ” `;
+  //   spanValue.style.color = "blue";
+  //   spanValue.style.fontSize = "20px";
+  //   form.appendChild(spanValue);
+  // }
+
+  // window.location.href = "afterLog.html";
 });
